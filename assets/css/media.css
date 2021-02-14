@@ -1,0 +1,6 @@
+@media only screen and (max-width: 960px) {
+    .content-link {
+      padding: 30px !important;
+      list-style: outside !important;
+    }
+  }
