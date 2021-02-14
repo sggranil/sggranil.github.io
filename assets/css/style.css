@@ -53,15 +53,6 @@ body {
     font-size: 30px;
 }
 
-.banner1 {
-    border-radius: 5px;
-    width: 550px;
-}
-
-.banner2 {
-    width: 400px;
-}
-
 .comp-logo1 {
     width: 100px;
     cursor: pointer;
