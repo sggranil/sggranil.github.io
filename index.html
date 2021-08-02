@@ -5,135 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simon Gerard Granil</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="src/css/style.min.css">
+    <link rel="icon" href="assets/images/logo/logo.png" type="image/gif" sizes="32x32">
+    <script src="https://kit.fontawesome.com/6151fd81d3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-    <div class="container-fluid navi"> 
-        <nav class="navbar navbar-light">
-            <a class="branding" href="/module3/">
-                <img class="profile-image mx-2 mb-1" src="assets/images/profile.jpg" width="35px">
-                Simon Gerard Granil
-            </a>
-
-            <ul class="nav">
-                <li class="nav-item dropdown mx-3">
-                    <button class="nav-link hamburger" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start" style="right: 0; left: auto;" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item p-3" href="#"><i class="far fa-user-circle mx-1"></i> Profile</a></li>
-                        <li><a class="dropdown-item p-3" href="#"><i class="fas fa-project-diagram mx-1"></i> Personal Projects</a></li>
-                    </ul>
-                </li>
-            </ul>
+    <section class="header">
+        <nav>
+            <div class="brand">
+                <img src="assets/images/logo/logo.png" alt="pixelPlay Logo" width="75px">
+            </div>
+            <div class="nav_content">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/DaAmazingTenten/">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/timounnnnnn">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/simon-gerard-granil-a04251181/">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sggranil">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
+        <div class="banner">
+            <h1>I CAN DO</h1>
+            <span class="jobs"></span>
+            <div>
+                <a href="/portfolio/" class="btn_portfolio">Check My Portfolio</a>
+            </div>
+        </div>
 
+    </section>
 
-        <div class="container text-center text-lg-start p-5">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="row text-white">
-                        <div class="col-lg-10 my-4">
-                            <h1 style="font-size: 55px;">Need a graphic solution for your business?</h1>
-                            <p style="font-size: 20px;">I help clients for their digital design needs from small to medium range businesses.</p>
-                            <a class="btn btn-primary px-5 py-3 my-3" href="">Drop Me an Email <i class="far fa-envelope mx-2 mt-1"></i></a>
-                            <p><a class="text-white text-decoration-none" href="http://instagram.com/edservicesph">Or see my finished product?</a> (via Instagram)</p>
+    <section>
+        <div class="section1__container">
+            <h1>
+                <span>PROGRAMMING</span> SKILLS
+            </h1>
+            <div class="row">
+                <div class="column">
+                    <div class="card">
+                        <div class="gauge frontendValue">
+                            <div class="gauge__body">
+                                <div class="gauge__fill"></div>
+                                <div class="gauge__cover">
+                                    <h2 class="gauge__value"></h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <span class="gauge__description">Frontend</span>
                 </div>
-                <div class="col-lg-6 my-5">
-                    <img class="banner-illustration img-fluid w-100" src="assets/images/banner/banner1.jpg" alt="Client" width="100%">
+                <div class="column">
+                    <div class="card">
+                        <div class="gauge backendValue">
+                            <div class="gauge__body">
+                                <div class="gauge__fill"></div>
+                                <div class="gauge__cover">
+                                    <h2 class="gauge__value"></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="gauge__description">Backend</span>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="gauge uiValue">
+                            <div class="gauge__body">
+                                <div class="gauge__fill"></div>
+                                <div class="gauge__cover">
+                                    <h2 class="gauge__value"></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="gauge__description">UI/UX Design</span>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="gauge resValue">
+                            <div class="gauge__body">
+                                <div class="gauge__fill"></div>
+                                <div class="gauge__cover">
+                                    <h2 class="gauge__value"></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="gauge__description">Responsiveness</span>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <div id="header"></div>
+
+    <!-- 
+    <div class="banner-wrapper">
+            <img class="banner" src="assets/images/banner/caste.jpg">
         </div> 
-    </div>
 
-    <div class="container p-5">
-        <div class="row align-items-center">
-            <div class="col-lg-6 my-2 p-5">
-                <img class="banner-illustration img-fluid w-100" src="assets/images/banner/banner2.png" alt="Client" width="90%">
-            </div>
-            <div class="col-lg-6 text-center my-5">
-                <h1 class="my-3" style="font-size: 50px;">What services do I offer to my clients?</h1>
-                <p style="font-size: 20px;">I do graphics design, motion graphics, photo and video editing specialized in several Adobe applications (Photoshop, Illustrator, After Effects, Premiere Pro) and CorelDraw application.</p>
-                <p style="font-size: 20px;">I make mock-up web designs, API's and web application using HTML, CSS, Javascript, PHP MySQL and Bootstrap framework.</p>
-                <p style="font-size: 20px;">I also accept reformat and operating system installation services.</p>
-                <a class="btn btn-primary px-5 py-3 my-3" href="">And buy me a coffee also <i class="fas fa-mug-hot mx-2"></i></a>
-            </div>
+    <section class="banner-content">
+        <div class="container">
+                <h1>Hi</h1>
         </div>
-    </div>
+    </section>
 
-    <div class="company-content container-fluid text-center text-white p-5">
-        <h1 class="p-5">Have been on these studios for <br>almost a month to serve you better!</h1>
-        <div class="row text-center">
-            <div class="col-lg-6 my-5">
-                <img class="comp-logo1" src="assets/images/logo/exodus.png" alt="">
-                <h4 class="my-3" style="font-weight: 500;">Exodus Digital Services</h4>
-                <p>for digital solutions</p>
-            </div>
-            <div class="col-lg-6 my-5">
-                <img class="comp-logo2 mt-1 mr-" src="assets/images/logo/pixelplay.png" alt="">
-                <h4 class="my-3" style="font-weight: 500;">pixelPlay Studio</h4>
-                <p>for application development purposes</p>
-            </div>
+    <section class="section-one">
+        <div class="container">
+            <h1>Hi</h1>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid p-5 bg-light text-center text-lg-start">
-        <div class="row">
-            <div class="col-lg-4 my-5">
-                <p style="font-weight: 500;">Simon Gerard Granil</p>
-                <p class="text-muted">I help clients for their digital design needs from small to medium range businesses.</p>
-                <a class="text-muted mx-2" style="font-size: 30px;" href="https://www.linkedin.com/in/simon-gerard-granil-a04251181/"><i class="fab fa-linkedin"></i></a>
-                <a class="text-muted mx-2" style="font-size: 30px;" href="https://github.com/sggranil"><i class="fab fa-github"></i></a>
-                <a class="text-muted mx-2" style="font-size: 30px;" href="https://facebook.com/DaAmazingTenten"><i class="fab fa-facebook"></i></a>
-            </div>
-            <div class="col-lg-2 my-5">
-                <p style="font-weight: 500;">Quick Links</p>
-                <ul class="link-list">
-                    <li class="li-link"><a class="link-site text-muted" href="">Home</a></li>
-                    <li class="li-link"><a class="link-site text-muted" href="">Profile</a></li>
-                    <li class="li-link"><a class="link-site text-muted" href="">Personal Projects</a></li>
-                    <li class="li-link"><a class="link-site text-muted" href="">Contact Me</a></li>
-                    <li class="li-link"><a class="link-site text-muted" href="">Donate</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-2 my-5">
-                <p style="font-weight: 500;">Organizations</p>
-                <ul class="link-list">
-                    <li class="li-link"><a class="link-site text-muted" href="">Exodus Digital Services</a></li>
-                    <li class="li-link"><a class="link-site text-muted" href="">pixelPlay Studio</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-4 my-5">
-                <p style="font-weight: 500;">Featured Articles</p>
-                <a class="article-content" href="https://99designs.com/blog/tips/graphic-design-basics/">
-                    <section>
-                        <b>Guides on Graphics Design</b>
-                        <p>Learn more new tips!</p>
-                    </section>
-                </a>
-                <a class="article-content" href="https://www.imperial.ac.uk/school-public-health/infectious-disease-epidemiology/it-support/basic-troubleshooting-guide/">
-                    <section>
-                        <b>Troubleshoot your PC Today!</b>
-                        <p>Take these steps on how to manage your computer with your own.</p>
-                    </section>
-                </a>
-            </div>
-        </div>
-    </div>
+    <section class="banner">
+        <div class="upper"></div>
+        <div class="lower"></div>
+        <button id="button">Click to Start</button>
+    </section> -->
 
-    <footer class="py-3 mx-5 text-muted text-center text-lg-start">
-        © Simon Gerard Granil 2021
-    </footer>
+    <script src="src/js/particles/particles.min.js"></script> 
+    <script src="src/js/typed/typed.js"></script>
+    <script src="src/js/libraries.js"></script>
+    <script src="src/js/script.js"></script>
 
-    <script src="https://kit.fontawesome.com/6151fd81d3.js" crossorigin="anonymous"></script>
-    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/script.js"></script>
-    
 </body>
 </html>
