@@ -28,9 +28,9 @@
                 showUp[i].classList.remove('active');
             }
             
-            setGaugeValue(frontendValue, 0.63);
-            setGaugeValue(backendValue, 0.52);
-            setGaugeValue(uiValue, 0.81);
+            setGaugeValue(frontendValue, 0.51);
+            setGaugeValue(backendValue, 0.43);
+            setGaugeValue(uiValue, 0.64);
             setGaugeValue(resValue, 0.23); 
         }
     })
