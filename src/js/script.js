@@ -10,15 +10,30 @@
             return;
         }
 
-        gauge.querySelector('.gauge__fill').style.transform = `rotate(${
-            value / 2
-        }turn)`;
-        gauge.querySelector('.gauge__value').textContent = `${Math.round(
-            value * 100
-        )}%`;
+        gauge.querySelector('.gauge__fill').style.transform = `rotate(${value / 2}turn)`;
+        gauge.querySelector('.gauge__value').textContent = `${Math.round(value * 100)}%`;
     }
 
-    setGaugeValue(frontendValue, 0.42);
-    setGaugeValue(backendValue, 0.37);
-    setGaugeValue(uiValue, 0.73);
-    setGaugeValue(resValue, 0.68);
+    window.addEventListener('scroll', () => {
+        const showUp = document.querySelectorAll('.showUp');
+
+        for (var i = 0; i < showUp.length; i++) {
+            let height = window.innerHeight;
+            let reveal = showUp[i].getBoundingClientRect().top;
+            var showPoint = 150;
+
+            if (reveal < height - showPoint) {
+                showUp[i].classList.add('active');
+            } else {
+                showUp[i].classList.remove('active');
+            }
+            
+            setGaugeValue(frontendValue, 0.63);
+            setGaugeValue(backendValue, 0.52);
+            setGaugeValue(uiValue, 0.81);
+            setGaugeValue(resValue, 0.23); 
+        }
+    })
+
+
+    // portfolio
