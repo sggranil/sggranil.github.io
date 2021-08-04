@@ -33,9 +33,9 @@ li, a {
 }
 
 .navigation {
-  min-height: 100vh;
   width: 100%;
   position: relative;
+  color: #fff;
 }
 
 nav {
@@ -96,13 +96,14 @@ nav {
   color: #d1d7e0;
 }
 
-.banner .btn_portfolio {
+.btn_portfolio {
   border: 1px solid #d1d7e0;
   border-radius: 0;
   background-color: transparent;
   color: #d1d7e0;
   padding: 12px 24px;
   font-size: 16px;
+  cursor: pointer;
 }
 
 /* body */
@@ -509,6 +510,119 @@ footer {
   margin: 0px;
 }
 
+/* portfolio */
+.portfolio-one h1 {
+  font-size: 48px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-shadow: 4px 4px #564f6f;
+  text-align: center;
+  padding: 20px;
+}
+
+.portfolio-one .container {
+  width: 75%;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 100px;
+  /* .card-cert {
+            padding: 30px;
+            margin: 10px;
+
+            .card-content {
+                text-align: center;
+
+                span {              
+                    margin-bottom: 30px;
+
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+
+                a {
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    padding: 10px 12px;
+                }
+            }
+        } */
+}
+
+.portfolio-one .container article {
+  font-size: 17px;
+  text-indent: 50px;
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-one .container figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+.portfolio-one .container .image {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.portfolio-one .container .card {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 30px;
+  margin: 10px;
+}
+
+.portfolio-one .container .card .card-content span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.portfolio-one .container .card .card-content span img {
+  margin-right: 10px;
+}
+
+.portfolio-one .container .card .card-content a {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 12px;
+}
+
+.shape-container {
+  position: fixed;
+  top: 100px;
+  z-index: -999;
+}
+
+.shape-container .circle-1 {
+  position: absolute;
+  opacity: 0.1;
+  left: 10px;
+  background-color: #802bb1;
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.shape-container .circle-2 {
+  position: absolute;
+  opacity: 0.1;
+  left: 50px;
+  background-color: #d1d7e0;
+  height: 1000px;
+  width: 1000px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
 /*
 
 .banner-wrapper {
@@ -591,6 +705,14 @@ section.section-one {
   transition: all 1s ease 0s;
 }
 
+.column-port {
+  grid-column: span 6;
+}
+
+.column-cert {
+  grid-column: span 4;
+}
+
 .column-3 {
   grid-column: span 4;
   opacity: 0;
@@ -640,7 +762,7 @@ section.section-one {
     -ms-grid-columns: (1fr)[3] !important;
         grid-template-columns: repeat(3, 1fr) !important;
   }
-  .column-2 {
+  .column-2, .column-port, .column-cert {
     grid-column: span 12;
     margin: 0px;
   }
@@ -659,6 +781,10 @@ section.section-one {
   .column, .column-3 {
     grid-column: span 6;
   }
+  .portfolio-one h1 {
+    text-align: center;
+    font-size: 18px;
+  }
   .landing-two .landing-two__container {
     width: 100% !important;
   }
@@ -671,7 +797,7 @@ section.section-one {
   .gauge {
     max-width: 450px;
   }
-  img {
+  .prog-icon img {
     width: 35px;
   }
 }
