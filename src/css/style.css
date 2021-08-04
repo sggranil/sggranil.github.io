@@ -595,6 +595,41 @@ footer {
   padding: 10px 12px;
 }
 
+.blog-one h1 {
+  font-size: 48px;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  text-shadow: 4px 4px #564f6f;
+  text-align: center;
+  padding: 20px;
+}
+
+.blog-one .container {
+  width: 75%;
+  margin: 0 auto;
+  color: #fff;
+  margin-bottom: 100px;
+}
+
+.blog-one .container article {
+  font-size: 17px;
+  text-indent: 50px;
+  text-align: justify;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.blog-one .container figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+.blog-one .container .image {
+  width: 50%;
+  margin: 0 auto;
+}
+
 .shape-container {
   position: fixed;
   top: 100px;
