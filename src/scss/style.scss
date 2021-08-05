@@ -326,11 +326,6 @@ nav {
     }
 }
 
-footer {
-    background-color: $secondary;
-    color: #fff;
-    padding: 20px;
-}
 
 /* gauge */
 
@@ -555,7 +550,7 @@ footer {
             }
         }
 
-        /* .card-cert {
+        .card-cert {
             padding: 30px;
             margin: 10px;
 
@@ -576,7 +571,7 @@ footer {
                     padding: 10px 12px;
                 }
             }
-        } */
+        } 
     }
 }
 
@@ -686,6 +681,60 @@ section.section-one {
     position: relative;
     background-color: $light
 } */
+
+footer {
+    background-color: $secondary;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footer-container {
+        width: 95%;
+        margin: 0 auto;
+
+        .footer-link {
+            display: flex;
+            align-items: center;
+
+            .footer_content {
+                text-align: right;
+                margin-left: 30px;
+
+                ul li {
+                    list-style: none;
+                    display: inline-block;
+                    padding: 8px;
+                    position: relative;
+                
+                    a {  
+                        font-size: 25px;
+                        vertical-align: middle;
+                        transition: all 0.3s ease 0s;
+                    }
+                    
+                    a:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    
+        .about {
+            padding: 20px;
+            color: #564f6f;
+
+            span {
+                text-align: justify;
+            }
+        }
+    }
+}
+
+
+
+
 
 
 /* default */
